@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ejercicios {
+public class ejercicio {
     public static void main(String[] args) {
 
         /* Ejercicio 1
@@ -103,6 +103,7 @@ public class ejercicios {
         System.out.println((edad<=28 && nivelestudios>3) || (edad<30 && ingresos>28000) ? "Verdad" : "Falso");
         */
 
+
         float base;
         float ireducido = 0.10f;
         float igeneral = 0.21f;
@@ -120,9 +121,9 @@ public class ejercicios {
         } else if (tiva.equals("general")) {
             iva = igeneral;
         } //VALOR IVA
-       // Scanner scodigopromocional = new Scanner(System.in);
+         Scanner scodigopromocional = new Scanner(System.in);
         System.out.println("¿Código promocional?");
-        String respuesta = lector.nextLine();
+        String respuesta = scodigopromocional.nextLine();
         if (respuesta.equals("si")) {
             codigopromocional = true;
         } else if (respuesta.equals("no")) {
@@ -133,5 +134,26 @@ public class ejercicios {
         System.out.println("Precio con IVA, " + base);
         base = base / (codigopromocional ? 2f : 1f);
         System.out.println("Con código promocional, " + base);
+
+
+
+        /* Ejercicio 12
+        double nota1;
+        double notafinal;
+        double notareal1;
+        double notanecesaria;
+        //nota1=40%
+        //nota2=60%
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduzca la nota del primer examen.");
+        nota1 = sc.nextDouble();
+        notareal1 = nota1 * 0.40;
+        System.out.println(nota1);
+        System.out.println("Introduzca la nota que desea en el trimestre.");
+        notafinal = sc.nextDouble();
+        notanecesaria = (notafinal - notareal1) / 0.60;
+        System.out.println("Necesita usted, " + notanecesaria + " para aprobar");
+         */
     }
 }
