@@ -1,10 +1,11 @@
-import java.sql.SQLOutput;
 import java.util.Scanner;
+/*
+USO DEL BUCLE
+ */
 
-public class Main {
+public class ejerciciosJava2 {
     public static void main(String[] args){
-
-        /* Ejercicio1
+                /* Ejercicio1
         Scanner sc = new Scanner(System.in);
         System.out.println("Introduzca un día de la semana.");
         String dia = sc.nextLine().toLowerCase();
@@ -49,9 +50,12 @@ public class Main {
         }
          */
 
-        float n1 = 0.00f;
-        float n2 = 0.00f;
-        float notafinal = 0.00f;
+
+        /*Ejercicio 3
+        float n1;
+        float n2;
+        float notafinal;
+        String recu;
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Introduzca la primera nota.");
@@ -59,7 +63,96 @@ public class Main {
         System.out.println("Introduzca la segunda nota.");
         n2 = sc.nextFloat();
         notafinal = (n1 + n2) / 2;
-        
+        if (notafinal >= 5) {
+            System.out.println("Aprobado con un "  + notafinal);
+        } else {
+            System.out.println("La recuperación: Apto o No apto?");
+            sc.nextLine();
+            recu = sc.nextLine().toLowerCase();
 
+            if (recu.equals("apto")){
+                System.out.println("Aprobado con un 5.");
+            } else {
+                System.out.println("Su nota final es un " + notafinal);
+            }
+        }
+         */
+
+        int n;
+        int noriginal;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduzca un número. (Máximo 5 cifras.)");
+        n = sc.nextInt();
+        noriginal = n;
+        n = n % 10;
+        if (n != 0) {
+            System.out.println("Tu número es capicúa.");
+        } else {
+            System.out.println("No es capicúa.");
+        }
+
+
+        /*Ejercicio 5
+        int mult;
+        for (int n = 0; n < 100; n++){
+            mult = n * 5;
+            System.out.println("La multiplicación es " + mult);
+        }
+         */
+
+        /*Ejercicio 6
+        int contador = 0;
+        int mult;
+        while (contador < 100){
+            mult = contador * 5;
+            contador += 1;
+            System.out.println("La respuesta es " + mult);
+        }
+         */
+
+        /*Ejercicio 7
+        int contador = 0;
+        int mult;
+        do{
+            mult = contador * 5;
+            contador += 1;
+            System.out.println("La respuesta es " + mult);
+        } while (contador < 100);
+         */
+
+        /*Ejercicio 8
+        int resultado = 0;
+
+        for (int n = 320; n >= 180; n -= 20) {
+
+            resultado = n - 20 ;
+            System.out.println("Resultado " + resultado);
+
+        }
+         */
+
+
+        /* Ejercicio 9
+        int contador = 320;
+        int answer;
+
+        while (contador > 160){
+            answer = contador - 20;
+            contador -= 20;
+            System.out.println(contador);
+        }
+         */
+
+        /*Ejercicio 10
+        int contador = 320;
+        int resultado;
+
+        do {
+            resultado = contador - 20;
+            contador -= 20;
+            System.out.println("El resultado es " + resultado);
+        } while (contador > 160);
+        */
     }
 }
