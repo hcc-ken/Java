@@ -141,12 +141,9 @@ public class ejerciciosJava2 {
 
         /*Ejercicio 10
         int contador = 320;
-        int resultado;
-
         do {
-            resultado = contador - 20;
-            contador -= 20;
             System.out.println("El resultado es " + resultado);
+            contador -= 20;
         } while (contador > 160);
         */
     }
