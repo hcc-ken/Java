@@ -94,10 +94,8 @@ public class ejerciciosJava2 {
 
 
         /*Ejercicio 5
-        int mult;
-        for (int n = 0; n < 100; n++){
-            mult = n * 5;
-            System.out.println("La multiplicación es " + mult);
+        for (int n = 0; n < 100; n += 5){
+            System.out.println("La multiplicación es " + n);
         }
          */
 
