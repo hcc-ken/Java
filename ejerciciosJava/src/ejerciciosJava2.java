@@ -1,0 +1,158 @@
+import java.util.Scanner;
+/*
+USO DEL BUCLE
+ */
+
+public class ejerciciosJava2 {
+    public static void main(String[] args){
+                /* Ejercicio1
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduzca un día de la semana.");
+        String dia = sc.nextLine().toLowerCase();
+
+        switch (dia) {
+            case ("lunes"):
+                System.out.println("Tienes Sistemas Informáticos");
+                break;
+
+            case ("martes"):
+                System.out.println("Tienes Programación");
+                break;
+
+            case ("miercoles"):
+                System.out.println("Tienes Programación");
+                break;
+
+            case ("jueves"):
+                System.out.println("Tienes Bases de Datos");
+                break;
+
+            case ("viernes"):
+                System.out.println("Tienes Entorno de Desarrollo");
+                break;
+
+            default:
+                System.out.println("No tienes clase.");
+        }
+         */
+
+        /* Ejercicio 2
+        int n;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Qué hora es?");
+        n = sc.nextInt();
+        if (n == 6 || n <= 12){
+            System.out.println("Buenos días.");
+        } else if (n == 13 || n <=20) {
+            System.out.println("Buenas tardes.");
+        } else {
+            System.out.println("Buenas noches.");
+        }
+         */
+
+
+        /*Ejercicio 3
+        float n1;
+        float n2;
+        float notafinal;
+        String recu;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduzca la primera nota.");
+        n1 = sc.nextFloat();
+        System.out.println("Introduzca la segunda nota.");
+        n2 = sc.nextFloat();
+        notafinal = (n1 + n2) / 2;
+        if (notafinal >= 5) {
+            System.out.println("Aprobado con un "  + notafinal);
+        } else {
+            System.out.println("La recuperación: Apto o No apto?");
+            sc.nextLine();
+            recu = sc.nextLine().toLowerCase();
+
+            if (recu.equals("apto")){
+                System.out.println("Aprobado con un 5.");
+            } else {
+                System.out.println("Su nota final es un " + notafinal);
+            }
+        }
+         */
+
+        int n;
+        int noriginal;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduzca un número. (Máximo 5 cifras.)");
+        n = sc.nextInt();
+        noriginal = n;
+        n = n % 10;
+        if (n != 0) {
+            System.out.println("Tu número es capicúa.");
+        } else {
+            System.out.println("No es capicúa.");
+        }
+
+
+        /*Ejercicio 5
+        int mult;
+        for (int n = 0; n < 100; n++){
+            mult = n * 5;
+            System.out.println("La multiplicación es " + mult);
+        }
+         */
+
+        /*Ejercicio 6
+        int contador = 0;
+        int mult;
+        while (contador < 100){
+            mult = contador * 5;
+            contador += 1;
+            System.out.println("La respuesta es " + mult);
+        }
+         */
+
+        /*Ejercicio 7
+        int contador = 0;
+        int mult;
+        do{
+            mult = contador * 5;
+            contador += 1;
+            System.out.println("La respuesta es " + mult);
+        } while (contador < 100);
+         */
+
+        /*Ejercicio 8
+        int resultado = 0;
+
+        for (int n = 320; n >= 180; n -= 20) {
+
+            resultado = n - 20 ;
+            System.out.println("Resultado " + resultado);
+
+        }
+         */
+
+
+        /* Ejercicio 9
+        int contador = 320;
+        int answer;
+
+        while (contador > 160){
+            answer = contador - 20;
+            contador -= 20;
+            System.out.println(contador);
+        }
+         */
+
+        /*Ejercicio 10
+        int contador = 320;
+        int resultado;
+
+        do {
+            resultado = contador - 20;
+            contador -= 20;
+            System.out.println("El resultado es " + resultado);
+        } while (contador > 160);
+        */
+    }
+}
