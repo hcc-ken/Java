@@ -78,21 +78,6 @@ public class ejerciciosJava2 {
         }
          */
 
-        int n;
-        int noriginal;
-
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Introduzca un número. (Máximo 5 cifras.)");
-        n = sc.nextInt();
-        noriginal = n;
-        n = n % 10;
-        if (n != 0) {
-            System.out.println("Tu número es capicúa.");
-        } else {
-            System.out.println("No es capicúa.");
-        }
-
-
         /*Ejercicio 5
         for (int n = 0; n < 100; n += 5){
             System.out.println("La multiplicación es " + n);
@@ -146,5 +131,40 @@ public class ejerciciosJava2 {
             contador -= 20;
         } while (contador > 160);
         */
+
+        /*
+        int password = 8888;
+        int n;
+        int intentos = 0;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduzca la PIN.");
+
+        do {
+            n = sc.nextInt();
+            if (n == password) {
+                System.out.println("La caja fuerte se ha abierto satisfactoriamente.");
+            } else {
+                System.out.println("La contraseña es errónea, inténtelo de nuevo.");
+                intentos ++;
+            }
+        } while (intentos < 4  && n != password);
+        */
+
+                int n;
+        int noriginal;
+        int respuesta;
+        int contador = 0;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduzca un número.");
+        n = sc.nextInt();
+
+        do {
+            contador += 1;
+            n = n % 10;
+        } while (n < 0);
+
+        System.out.println("Tiene " + contador + " cifras");
     }
 }
