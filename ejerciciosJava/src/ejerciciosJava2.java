@@ -124,8 +124,7 @@ public class ejerciciosJava2 {
 
         for (int n = 320; n >= 180; n -= 20) {
 
-            resultado = n - 20 ;
-            System.out.println("Resultado " + resultado);
+            System.out.println("Resultado " + n);
 
         }
          */
@@ -133,12 +132,10 @@ public class ejerciciosJava2 {
 
         /* Ejercicio 9
         int contador = 320;
-        int answer;
 
-        while (contador > 160){
-            answer = contador - 20;
-            contador -= 20;
+        while (contador >= 160){
             System.out.println(contador);
+                        contador -= 20;
         }
          */
 
