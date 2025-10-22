@@ -78,33 +78,55 @@ public class ejerciciosJava2 {
         }
          */
 
-        /*Ejercicio 5
+        /* Ejercicio 4
+        int n;
+        int resultado = 0;
+        int restos;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduzca un dígito.");
+        n = sc.nextInt();
+
+        while (n > 0) {
+            restos = n % 10;
+            resultado = resultado * 10 + restos;
+            n = n / 10;
+        }
+
+        if (n == resultado) {
+            System.out.println("El resultado es capicúa.");
+        } else {
+            System.out.println("No es capicúa.");
+        }
+         */
+
+        /*Ejercicio 6
         for (int n = 0; n < 100; n += 5){
             System.out.println("La multiplicación es " + n);
         }
          */
 
-        /*Ejercicio 6
+        /*Ejercicio 7
         int contador = 0;
-        int mult;
+        int multplicar;
         while (contador < 100){
-            mult = contador * 5;
+            multplicar = contador * 5;
             contador += 1;
-            System.out.println("La respuesta es " + mult);
+            System.out.println("La respuesta es " + multplicar);
         }
          */
 
-        /*Ejercicio 7
+        /*Ejercicio 8
         int contador = 0;
-        int mult;
+        int multplicar;
         do{
-            mult = contador * 5;
+            multplicar = contador * 5;
             contador += 1;
-            System.out.println("La respuesta es " + mult);
+            System.out.println("La respuesta es " + multplicar);
         } while (contador < 100);
          */
 
-        /*Ejercicio 8
+        /*Ejercicio 9
         int resultado = 0;
 
         for (int n = 320; n >= 180; n -= 20) {
@@ -115,7 +137,7 @@ public class ejerciciosJava2 {
          */
 
 
-        /* Ejercicio 9
+        /* Ejercicio 10
         int contador = 320;
 
         while (contador >= 160){
@@ -124,7 +146,7 @@ public class ejerciciosJava2 {
         }
          */
 
-        /*Ejercicio 10
+        /*Ejercicio 11
         int contador = 320;
         do {
             System.out.println("El resultado es " + resultado);
@@ -151,9 +173,9 @@ public class ejerciciosJava2 {
         } while (intentos < 4  && n != password);
         */
 
-                int n;
-        int noriginal;
-        int respuesta;
+
+        /* Ejercicio 12
+        int n;
         int contador = 0;
 
         Scanner sc = new Scanner(System.in);
@@ -161,10 +183,74 @@ public class ejerciciosJava2 {
         n = sc.nextInt();
 
         do {
+            n = n / 10;
             contador += 1;
-            n = n % 10;
-        } while (n < 0);
+        } while (n > 0);
 
         System.out.println("Tiene " + contador + " cifras");
+         */
+
+
+        /* Ejercicio 13
+        int n;
+        int suma= 0;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduzca un número.");
+        n = sc.nextInt();
+
+        for (int contador = 0; contador <= 100; contador += 1) {
+            suma = suma + n;
+            n += 1;
+            System.out.println(suma);
+        }
+         */
+
+
+        int n, filaActual, nespacios;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduzca un número");
+        n = sc.nextInt();
+        filaActual = 1;
+        nespacios = n - 1;
+
+        while (filaActual <= n) {
+            for (int i = 1; i <= nespacios; i += 1) {
+                System.out.print(" ");
+            }
+            nespacios -= 1;
+
+            for (int i = 1; i <= filaActual; i = i + 1){
+                System.out.print(i);
+            }
+            for (int i = filaActual - 1; i >= 1; i = i - 1){
+                System.out.print(i);
+            }
+            System.out.println("");
+            filaActual += 1;
+        }
+
+
+
+
+
+        /* Ejercicio 15
+        int n;
+        int resultado = 0;
+        int restos;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduzca un dígito.");
+        n = sc.nextInt();
+
+        while (n > 0) {
+            restos = n % 10;
+            resultado = resultado * 10 + restos;
+            n= n / 10;
+        }
+
+        System.out.println(resultado);
+         */
+
     }
 }
