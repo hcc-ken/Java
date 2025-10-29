@@ -3,14 +3,20 @@ import java.util.Scanner;
 public class ejerciciosJava3 {
 
     public static int mult (int n){
-        
+
     }
 
     public static void main(String[] args) {
-        int circunferencia;
-        
+        int menu, radio;
+
         Scanner sc = new Scanner(System.in);
-        
+        System.out.println("Elija un número entre 1 y 2.");
+        menu = sc.nextInt();
+
+        switch (menu) {
+            case 1:
+                System.out.println("Introduzca radio.");
+        }
     }
 }
 
@@ -147,3 +153,4 @@ public static double precio (double n1, double n2){
         System.out.println(mult(n));
     }
  */
+
