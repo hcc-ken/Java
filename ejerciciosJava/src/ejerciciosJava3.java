@@ -1,26 +1,7 @@
+import javax.lang.model.type.ArrayType;
+import java.util.InputMismatchException;
+import java.util.Locale;
 import java.util.Scanner;
-
-public class ejerciciosJava3 {
-
-    public static int mult (int n){
-
-    }
-
-    public static void main(String[] args) {
-        int menu, radio;
-
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Elija un número entre 1 y 2.");
-        menu = sc.nextInt();
-
-        switch (menu) {
-            case 1:
-                System.out.println("Introduzca radio.");
-        }
-    }
-}
-
-
 
 /* Ejercicio 1
 public static double mult (double n1, double n2){
@@ -154,3 +135,117 @@ public static double precio (double n1, double n2){
     }
  */
 
+/* Ejercicio 7
+public static int menu (){
+        int opcion;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("1. Circunferencia.");
+        System.out.println("2. Área.");
+        System.out.println("3. Volumen.");
+        System.out.println("4. Todo.");
+        System.out.println("5. Salir");
+        System.out.println("Introduzca número.");
+        opcion = sc.nextInt();
+        return opcion;
+    }
+
+    public static double dobleradio () {
+        double nradio;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduzca la radio");
+        nradio = sc.nextDouble();
+
+        return nradio;
+    }
+
+    public static double circunferencia (double r) {
+        double circunferencia;
+
+        circunferencia = 2 * 3.14 * r;
+
+        return circunferencia;
+    }
+
+    public static double area (double r) {
+        double area;
+
+        area = 3.14 * r * r;
+
+        return area;
+    }
+
+    public static double volumen (double r) {
+        double volumen;
+
+        volumen = 4/3 * 3.14 * Math.pow(r, 3);
+
+        return volumen;
+    }
+
+
+    public static void main(String[] args) {
+
+        int exit = 0;
+
+        do {
+            int opcion = menu();
+
+            if (opcion == 5) {
+                exit = 5;
+            }
+
+
+            double r = dobleradio();
+
+            switch (opcion){
+                case 1:
+                    System.out.println("La circunferencia es " + circunferencia(r));
+                    break;
+
+                case 2:
+                    System.out.println("El área es " + area(r));
+                    break;
+
+                case 3:
+                    System.out.println("El volumen es " + volumen(r));
+                    break;
+
+                case 4:
+                    System.out.println("La circunferencia es " + circunferencia(r));
+                    System.out.println("El área es " + area(r));
+                    System.out.println("El volumen es " + volumen(r));
+                    break;
+
+        }
+
+
+        } while (exit != 5);
+    }
+ */
+        /*
+        try {
+            int resultado, n1, n2;
+
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Introduzca un número.");
+            n1 = sc.nextInt();
+            System.out.println("Introduzca otro número.");
+            n2 = sc.nextInt();
+
+            int division = n1 / n2;
+
+            System.out.println("El resultado es " + division);
+        }
+
+        catch (ArithmeticException e) {
+            System.out.println("No se puede dividir entre 0.");
+        }
+
+        catch (InputMismatchException e) {
+            System.out.println("No se puede introducir una letras o símbolos.");
+        }
+         */
+
+}
