@@ -14,8 +14,10 @@ public class Punto {
         return y;
     }
 
-    public void setx() {
-        return this.x
+    public void setx(int x) {
+        this.x = x;
     }
+
+
 
 }
