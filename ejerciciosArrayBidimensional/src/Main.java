@@ -13,27 +13,24 @@ public class Main {
 //            System.out.println();}
         int [][] alumno;
         int notas = 0, min = 0, max = 0, media = 0, acumulador = 0;
-        alumno = new int [5][4];
+        alumno = new int [4][5];
         Scanner sc = new Scanner(System.in);
 
         for (int i = 0; i < alumno.length; i++) {
             System.out.println("Introduzca su nota, alumno " + (i+1));
             for (int j = 0; j < alumno.length; j++) {
                 System.out.println("Asinatura: " + (j+1));
-                notas = sc.nextInt();
+                alumno[i][j] = sc.nextInt();
             }
         }
 
         for (int i = 0; i < alumno.length; i++) {
+            min = alumno[i][0];
+            max = alumno[i][0];
             for (int j = 0; j < alumno.length; j++) {
-                acumulador += notas;
-                media = acumulador / 5;
-                if (notas>min) {
-
-                }
+                acumulador += alumno[i][j];
             }
 
-            System.out.println("Media: " + media);
         }
     }
 }
