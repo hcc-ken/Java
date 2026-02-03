@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Java.iml" filepath="$PROJECT_DIR$/.idea/Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/arrayList/arrayList.iml" filepath="$PROJECT_DIR$/arrayList/arrayList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/arrayString/arrayString.iml" filepath="$PROJECT_DIR$/arrayString/arrayString.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ejercicioContacto/ejercicioContacto.iml" filepath="$PROJECT_DIR$/ejercicioContacto/ejercicioContacto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ejerciciosArrayBidimensional/ejerciciosArrayBidimensional.iml" filepath="$PROJECT_DIR$/ejerciciosArrayBidimensional/ejerciciosArrayBidimensional.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ejerciciosJava/ejerciciosJava.iml" filepath="$PROJECT_DIR$/ejerciciosJava/ejerciciosJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ejerciciosPOO/ejerciciosJavaPOO/ejerciciosJavaPOO.iml" filepath="$PROJECT_DIR$/ejerciciosPOO/ejerciciosJavaPOO/ejerciciosJavaPOO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ejerciciosPOO/ejerciciosJavaPOO2/ejerciciosJavaPOO2.iml" filepath="$PROJECT_DIR$/ejerciciosPOO/ejerciciosJavaPOO2/ejerciciosJavaPOO2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ejerciciosPOO/ejerciciosJavaPOO3/ejerciciosJavaPOO3.iml" filepath="$PROJECT_DIR$/ejerciciosPOO/ejerciciosJavaPOO3/ejerciciosJavaPOO3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ejerciciosPOO/ejerciciosJavaPOO4/ejerciciosJavaPOO4.iml" filepath="$PROJECT_DIR$/ejerciciosPOO/ejerciciosJavaPOO4/ejerciciosJavaPOO4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/maquinaChuches/maquinaChuches.iml" filepath="$PROJECT_DIR$/maquinaChuches/maquinaChuches.iml" />
+    </modules>
+  </component>
+</project>
