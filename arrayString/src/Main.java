@@ -1,36 +1,61 @@
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String mensaje;
-        char letra;
-
-        System.out.println("Introduzca un mensaje.");
-        mensaje = sc.nextLine().toUpperCase();
-
-        for (int i = 0; i < mensaje.length(); i++) {
-            letra = mensaje.charAt(i);
-
-            if (letra == ' ') {
-                System.out.print(' ');
-            }
-            else if (letra >= 'A' && letra <= 'Z') {
-                letra++;
-                if (letra > 'Z') {
-                    letra = 'A';
+        // Ejercicio extras
+            public static String palindroma(String palabra){
+                char temp;
+                String invertido = "";
+                for (int i = 0; i < palabra.length(); i++){
+                    temp = palabra.charAt(i);
+                    invertido = temp + invertido;
                 }
-                System.out.print(letra);
+                return invertido;
             }
-            else if (letra >= '0' && letra <= '9') {
-                letra++;
-                if (letra > '9') {
-                    letra = '0';
+            public static void main(String[] args) {
+                String palabra;
+                Scanner sc = new Scanner(System.in);
+                System.out.println("Introduce una palabra para revisar si es palídroma o no:");
+                palabra = sc.nextLine();
+
+                if (palabra.equals(palindroma(palabra))){
+                    System.out.println("Es palídroma.");
+                } else {
+                    System.out.println("No es palídroma.");
                 }
-                System.out.print(letra);
             }
         }
 
+        // Ejercicio 3
+//        Scanner sc = new Scanner(System.in);
+//        String mensaje;
+//        char letra;
+//
+//        System.out.println("Introduzca un mensaje.");
+//        mensaje = sc.nextLine().toUpperCase();
+//
+//        for (int i = 0; i < mensaje.length(); i++) {
+//            letra = mensaje.charAt(i);
+//
+//            if (letra == ' ') {
+//                System.out.print(' ');
+//            }
+//            else if (letra >= 'A' && letra <= 'Z') {
+//                letra++;
+//                if (letra > 'Z') {
+//                    letra = 'A';
+//                }
+//                System.out.print(letra);
+//            }
+//            else if (letra >= '0' && letra <= '9') {
+//                letra++;
+//                if (letra > '9') {
+//                    letra = '0';
+//                }
+//                System.out.print(letra);
+//            }
+//        }
+
+        // Ejercicio 2
 //        Scanner sc = new Scanner(System.in);
 //        System.out.println("Introduzca su numero de telefono con prefijo.");
 //        String numero = sc.nextLine();
