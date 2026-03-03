@@ -17,6 +17,7 @@ public class Punto {                                        //* Hay que definir 
 
     public void setX(int x) { //* setters
         this.x = x;                                         //* los setters siempre serán void porque nunca hacen return, ya que solamente establece.
+                                                            //* cogen su valor desde el main cuando el main lo llama ejemplo.setX
     }
 
     public void setY(int y) {
